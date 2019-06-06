@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Broker</string>
+    <string name="broker">Broker</string>
+    <string name="nombre">Nombre</string>
+    <string name="jugar">Jugar</string>
+    <string name="comprar">Comprar</string>
+    <string name="vender">Vender</string>
+    <string name="acciones">Acciones</string>
+    <string name="capital">Capital</string>
+</resources>

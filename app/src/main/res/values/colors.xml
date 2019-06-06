@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#85657B</color>
+    <color name="colorPrimaryDark">#6F4E64</color>
+    <color name="colorAccent">#D875B8</color>
+    <color name="fondoPantalla">#BE9DB4</color>
+    <color name="fondoBoton">#9C7E93</color>
+</resources>

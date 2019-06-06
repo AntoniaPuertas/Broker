@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:layout_gravity="center"
+    android:background="@color/fondoPantalla"
+    tools:context=".Actividades.MainActivity">
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:text="Hello World!"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:padding="@android:dimen/app_icon_size"
+        android:text="TextView"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <Button
+        android:id="@+id/btnVendo"
+        style="@style/estilo_boton"
+        android:layout_width="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="@dimen/paddinButton"
+        android:text="@string/vender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
+
+    <Button
+        android:id="@+id/btnCompro"
+        style="@style/estilo_boton"
+        android:layout_width="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="@dimen/paddinButton"
+        android:text="@string/comprar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
+
+    <TextView
+        android:id="@+id/txtAcciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/acciones"
+        app:layout_constraintStart_toStartOf="@+id/btnCompro"
+        app:layout_constraintTop_toBottomOf="@+id/btnCompro" />
+
+    <TextView
+        android:id="@+id/txtTotalAcciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/btnVendo"
+        app:layout_constraintTop_toBottomOf="@+id/btnVendo" />
+
+    <TextView
+        android:id="@+id/txtCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/capital"
+        app:layout_constraintStart_toStartOf="@+id/txtAcciones"
+        app:layout_constraintTop_toBottomOf="@+id/txtAcciones" />
+
+    <TextView
+        android:id="@+id/txtCapitalEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalAcciones"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalAcciones" />
+
+    <TextView
+        android:id="@+id/txtTotalCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCapitalEuros"
+        app:layout_constraintStart_toStartOf="@+id/txtCapital"
+        app:layout_constraintTop_toBottomOf="@+id/txtCapitalEuros" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toStartOf="@+id/btnVendo"
+        app:layout_constraintStart_toEndOf="@+id/btnCompro"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio"
+        app:srcCompat="@drawable/ic_flecha_sube" />
+
+
+</android.support.constraint.ConstraintLayout>
