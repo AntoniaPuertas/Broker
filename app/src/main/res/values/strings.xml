@@ -7,4 +7,11 @@
     <string name="vender">Vender</string>
     <string name="acciones">Acciones</string>
     <string name="capital">Capital</string>
+    <string name="ehnorabuena">Enhorabuena!!!</string>
+    <string name="nuevo_record">Nuevo Record</string>
+    <string name="salir">Salir</string>
+    <string name="jugar_otra_vez">Jugar otra vez</string>
+    <string name="casiConsigues">Casi lo consigues</string>
+    <string name="intentalo_de_nuevo">Inténtalo de nuevo</string>
+    <string name="el_record_es">El record está en</string>
 </resources>

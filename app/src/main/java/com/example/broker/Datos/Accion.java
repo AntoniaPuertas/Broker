@@ -6,7 +6,7 @@ public class Accion {
 
     private String nombre;
     private double valor;
-    private int tendencia; //si es mayor que cero sube y si es menor que cero baja
+    private double tendencia; //si es mayor que cero sube y si es menor que cero baja
     private double valorMaximo;
     private double valorMinimo;
 
@@ -38,11 +38,11 @@ public class Accion {
         this.valor = valor;
     }
 
-    public int getTendencia() {
+    public double getTendencia() {
         return tendencia;
     }
 
-    public void setTendencia(int tendencia) {
+    public void setTendencia(double tendencia) {
         this.tendencia = tendencia;
     }
 

@@ -42,6 +42,7 @@
         android:layout_width="0dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:onClick="vender"
         android:padding="@dimen/paddinButton"
         android:text="@string/vender"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,6 +54,7 @@
         android:layout_width="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:onClick="comprar"
         android:padding="@dimen/paddinButton"
         android:text="@string/comprar"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtCapitalEuros" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgTendencia"
         android:layout_width="@android:dimen/app_icon_size"
         android:layout_height="@android:dimen/app_icon_size"
         android:layout_marginStart="8dp"

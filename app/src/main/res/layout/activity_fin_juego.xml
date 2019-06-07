@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoPantalla"
+    tools:context=".Actividades.FinJuegoActivity">
+
+    <TextView
+        android:id="@+id/txtMensajeFinJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/ehnorabuena"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMensajeFinJuego2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/nuevo_record"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtMensajeFinJuego"
+        app:layout_constraintStart_toStartOf="@+id/txtMensajeFinJuego"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensajeFinJuego" />
+
+    <TextView
+        android:id="@+id/txtRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtMensajeFinJuego2"
+        app:layout_constraintStart_toStartOf="@+id/txtMensajeFinJuego2"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensajeFinJuego2" />
+
+    <ImageView
+        android:id="@+id/imgTriunfo"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="@android:dimen/thumbnail_width"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRecord"
+        app:layout_constraintStart_toStartOf="@+id/txtRecord"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecord"
+        app:srcCompat="@drawable/copa" />
+
+    <Button
+        android:id="@+id/btnJugarOtraVez"
+        style="@style/estilo_boton"
+        android:layout_marginTop="32dp"
+        android:padding="@android:dimen/app_icon_size"
+        android:text="@string/jugar_otra_vez"
+        app:layout_constraintEnd_toEndOf="@+id/imgTriunfo"
+        app:layout_constraintStart_toStartOf="@+id/imgTriunfo"
+        app:layout_constraintTop_toBottomOf="@+id/imgTriunfo" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        style="@style/estilo_boton"
+        android:layout_marginTop="32dp"
+        android:text="@string/salir"
+        app:layout_constraintEnd_toEndOf="@+id/btnJugarOtraVez"
+        app:layout_constraintStart_toStartOf="@+id/btnJugarOtraVez"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugarOtraVez" />
+
+</android.support.constraint.ConstraintLayout>
